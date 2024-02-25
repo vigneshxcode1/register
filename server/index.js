@@ -23,7 +23,7 @@ app.post("/register",(req,res)=>{
 
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect('mongodb+srv://vicky:test123@cluster0.epdrsry.mongodb.net/?retryWrites=true&w=majority');
+  await mongoose.connect('mongodb+srv://vicky:test123@cluster0.epdrsry.mongodb.net/registers?retryWrites=true&w=majority');
   console.log("mongodb connect")
 }
 
